@@ -4,11 +4,13 @@ import { HomeController } from "./controllers";
 
 import { setStatic } from "./configs";
 
-const app = new App({
+const server = new App({
   port: +process.env.PORT || 3000,
   middleWares: [loggerMiddleware],
   controllers: [new HomeController()],
   configs: [setStatic],
 });
 
-app.listen();
+server.listen();
+
+export { server };
