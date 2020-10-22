@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Papa-het/simple-backend/issues"
   },
-  "homepage": "https://github.com/Papa-het/simple-backend#readme"
+  "homepage": "https://github.com/Papa-het/simple-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
