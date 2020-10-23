@@ -1,4 +1,5 @@
 import express, { Application } from "express";
+import bodyParser from "body-parser";
 
 import { Iterate } from "./interfaces";
 
@@ -27,6 +28,8 @@ class App {
   }
 
   private middlewares(middleWares: Iterate) {
+    this.app.use(bodyParser.json());
+
     middleWares.forEach((middleWare) => {
       this.app.use(middleWare);
     });
