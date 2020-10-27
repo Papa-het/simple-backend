@@ -19,5 +19,3 @@ mongoose
   .catch((err) => console.log(`Error on mongodb connection: ${err}`));
 
 server.listen();
-
-export { server };
